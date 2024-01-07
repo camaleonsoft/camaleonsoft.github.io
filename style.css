@@ -362,8 +362,10 @@ footer{
     color: #0debcd;
 }
 
-.banner-about div button {
-    position: relative
+#mobile-about div a {
+    position: relative;
+    margin: 0 23em;
+    padding: 0.9em 8em;
 }
 
 
@@ -437,7 +439,11 @@ footer{
         padding: 2.4em;
         margin: 0;
         height: 200vh;
+    }
 
+    #mobile-about div a {
+        padding: 0 2em;
+        margin: .5em 0;
     }
 
     .banner-about h2{
