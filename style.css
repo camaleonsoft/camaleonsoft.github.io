@@ -283,18 +283,17 @@ footer{
 
 
 /* About */
-#banner-about div{
+.banner-about div{
     padding: 100px 60px;
     background-image: url(./images/about-bg.jpg);
     height: 150vh;
     background-size:cover;
     background-position: center;
-
 }
 
 
 
-#banner-about::before {
+.banner-about::before {
     content: '';
     background: rgba(77,77,92, 0.6);
     position: absolute;
@@ -306,7 +305,7 @@ footer{
 
 }
 
-#banner-about h2 {
+.banner-about h2 {
     position: relative;
     color: #fff;
     font-size: 3em;
@@ -315,7 +314,7 @@ footer{
     text-decoration: underline #6cc091;
 }
 
-#banner-about p {
+.banner-about p {
     position: relative;
     font-size: 1.5em;
     color: #ffffffe1;
@@ -323,10 +322,10 @@ footer{
     line-height: 1.7;
     font-family: 'Dosis', serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     word-spacing: 1px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-#banner-about p::after {
+.banner-about p::after {
     content: '\00a0'; /* Agrega un espacio no rompible después de cada punto */
 }
 
@@ -363,9 +362,26 @@ footer{
     color: #0debcd;
 }
 
+.boton-about {
+    position: relative;
+    display: inline-block;
+    padding: 0.6em 0.6em;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0.1em solid #3498db;
+    border-radius: 5em;
+    color: #3498db;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
 
-
-
+.boton-about:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    border-color: #ffffff;
+}
 
 /* RESPONSIVE */
 @media(max-width: 768px){
@@ -431,14 +447,28 @@ footer{
 
 
     /* About */
-    #banner-about {
-        flex-direction: column;
-        align-items: center;
-        font-size: 0.6em;
-    } 
+    #mobile-about div{
+        text-align: center;
+        padding: 2.4em;
+        margin: 0;
+        height: 200vh;
 
-    #banner-about::before {
-        height: 140vh;
+    }
+
+    .banner-about h2{
+        padding: 0.1em;
+        align-items: center;
+    }
+
+    #mobile-about div p {
+        text-align: start;
+        font-size: 1.5em;
+        width: 16em;
+        line-height: 1.5;
+    }
+
+    .banner-about::before {
+        height: 160vh;
     }
     
     
