@@ -362,26 +362,11 @@ footer{
     color: #0debcd;
 }
 
-.boton-about {
-    position: relative;
-    display: inline-block;
-    padding: 0.6em 0.6em;
-    font-size: 1.2em;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 0.1em solid #3498db;
-    border-radius: 5em;
-    color: #3498db;
-    background-color: #ffffff;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+.banner-about div button {
+    position: relative
 }
 
-.boton-about:hover {
-    background-color: #3498db;
-    color: #ffffff;
-    border-color: #ffffff;
-}
+
 
 /* RESPONSIVE */
 @media(max-width: 768px){
