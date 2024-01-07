@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Vollkorn&display=swap');
+
 /* Reset */
 * {
     margin: 0;
@@ -278,6 +280,91 @@ footer{
     text-align: center;
     padding: 10px 0px;
 }
+
+
+/* About */
+#banner-about div{
+    padding: 100px 60px;
+    background-image: url(./images/about-bg.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+
+}
+
+
+
+#banner-about::before {
+    content: '';
+    background: rgba(77,77,92, 0.6);
+    position: absolute;
+    width: 100%;
+    margin: 100px 60px 60px 0px;
+    height: 100vh;
+    left: 0;
+    border-radius: 100px;
+
+}
+
+#banner-about h2 {
+    position: relative;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin: 1em;
+    text-decoration: underline #6cc091;
+}
+
+#banner-about p {
+    position: relative;
+    font-size: 1.5em;
+    color: #ffffffe1;
+    margin: 0.001em;
+    line-height: 1.7;
+    font-family: 'Dosis', serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 1px;
+   font-weight: 600;
+}
+
+#banner-about p::after {
+    content: '\00a0'; /* Agrega un espacio no rompible después de cada punto */
+
+}
+
+/* Decorando emogis */
+.computer-p i {
+    color: #4bae77;
+}
+
+.rocket-p i {
+    color: #d80e0e;
+}
+
+.users-gear i {
+    color: rgb(4, 54, 146);
+}
+
+.code-p i {
+    color: #000000;
+}
+
+.people-arrow-p i {
+    color: rgba(255, 255, 0, 0.712);
+}
+
+.magic-sparkles-p i {
+    color: #fcba06;
+}
+
+.network-wired-p i {
+    color: #16b116;
+}
+
+.handshake-p i {
+    color: #0debcd;
+}
+
+
 
 
 
