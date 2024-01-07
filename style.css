@@ -320,6 +320,7 @@ footer{
     /* APLICACIONES */
     #aplicaciones {
         flex-direction: column;
+        align-items: center;
     }
 
     /* ICONOS */
