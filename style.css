@@ -320,6 +320,12 @@ footer{
     /* APLICACIONES */
     #aplicaciones {
         flex-direction: column;
+        justify-content: center;
+    }
+
+    #aplicaciones img {
+        margin: 0 auto;
+        
     }
 
     /* ICONOS */
