@@ -464,3 +464,12 @@ footer{
     
     
 }
+
+
+@media(max-width: 415px){
+    #mobile-about div p {
+        font-size: 1.5em;
+        line-height: 1.3;
+        width: 15em;
+    }
+}
