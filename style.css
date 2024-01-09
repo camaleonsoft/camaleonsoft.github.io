@@ -323,6 +323,7 @@ footer{
     font-family: 'Dosis', serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     word-spacing: 1px;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 3.5);
 }
 
 .banner-about p::after {
