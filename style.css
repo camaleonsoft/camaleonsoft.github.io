@@ -20,7 +20,7 @@ header {
 .logo {
     text-transform: uppercase; /* Transforma el texto a Mayuscula */
     color: #6cc091; /* Color del texto del logo */
-    font-weight: calc(200 + 0.5vw); /* El font weight o en español peso de la fuente (grosor de la fuente) puede afectar el diseño responsivo en el sentido de que el cambio en el peso de la fuente puede influir en la altura y el ancho de los elementos que contienen texto. Sin embargo, este impacto suele ser más perceptible en tamaños de fuente grandes o en diseños muy sensibles a la tipografía.    */
+    font-weight: calc(180 + 0.5vw); /* El font weight o en español peso de la fuente (grosor de la fuente) puede afectar el diseño responsivo en el sentido de que el cambio en el peso de la fuente puede influir en la altura y el ancho de los elementos que contienen texto. Sin embargo, este impacto suele ser más perceptible en tamaños de fuente grandes o en diseños muy sensibles a la tipografía.    */
 }
 
 .menu a {
@@ -38,7 +38,7 @@ header {
 
 .mostrar-menu,
 .esconder-menu{
-    font-size: 30px;
+    font-size: 10vw;
     cursor: pointer;
     display: none;
     transition: 0.4s;
@@ -61,7 +61,7 @@ header {
 
 /* BANNER */
 #banner {
-    padding: 100px 60px;
+    padding: 15vw 10vw;
     background-image: url(./images/banner.jpg);
     height: 45vh;
     background-size: cover;
@@ -69,7 +69,7 @@ header {
 }
 #banner::before {
     content: '';
-    background: rgba(77,77,92, 0.5);
+    background: rgba(77,77,92, 0.7);
     position: absolute;
     width: 100%;
     height: 45vh;
@@ -78,11 +78,12 @@ header {
 
 .contenido-banner {
     position: relative;
-    color: #fff;
+    color: #fff; /* Probar con color igual a los ojos o la lupa*/
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 3.5);
 }
 
 .contenido-banner h3 {
@@ -98,10 +99,11 @@ header {
 .boton-empezar {
     text-decoration: none;
     color: #fff;
-    border: 1px solid #6cc091;
-    padding: 20px 40px;
+    border: 0.25vw solid #6cc091;
+    padding: 1vw 3vw;
     align-self: baseline;
     transition: all 0.4s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 3.5);
 }
 
 .boton-empezar:hover {
