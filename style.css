@@ -112,40 +112,40 @@ header {
 
 /* APLICACIONES */
 #aplicaciones {
-    padding: 50px 50px;
+    padding: 5vw 5vw;
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
 #aplicaciones img{
-    width: 350px;
+    width: 40vh;
     border-radius: 100%;
 }
 
 #aplicaciones div {
-    padding: 30px 30px;
+    padding: 5vw 5vw;
 }
 
 #aplicaciones div h4 {
     color: #4d4d5c;
-    font-size: 20px;
-    margin: 15px 0px;
+    font-size: 5vh;
+    margin: 1vw 0;
 }
 
 #aplicaciones div p {
     color: #4d4d5c87;
-    font-size: 18px;
+    font-size: 3vh;
 }
 
 .boton-saber-mas {
     display: inline-block;
     text-decoration: none;
     color: #6cc091;
-    padding: 10px 30px;
-    border: 3px solid #6cc091;
-    border-radius: 30px;
-    margin-top: 15px;
+    padding: 1vw 3vw;
+    border: 0.3vw solid #6cc091;
+    border-radius: 3vw;
+    margin-top: 1.2vw;
     transition: all 0.4s;
 }
 
@@ -156,12 +156,12 @@ header {
 
 /* ICONOS */
 #iconos {
-    padding: 0px 50px;
+    padding: 0 5vw;
     background: rgba(77, 77, 92, 0.5);
 }
 
 .contenido-iconos {
-    padding: 50px 50px 0px 50px;
+    padding: 5vw 5vw 0px 5vw;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -169,8 +169,7 @@ header {
 
 .contenido-iconos div {
     flex: 1;
-    margin: 20px 0px;
-    border-right: 2x solid rgba(255,255,255,0.2);
+    margin: 10vw 0;
 }
 
 #icono-mobile {
@@ -179,19 +178,19 @@ header {
 
 .contenido-iconos div i {
     color: #6cc091;
-    font-size: 80px;
-    margin: 0px;
+    font-size: 10vh;
+    margin: 0;
 }
 
 .contenido-iconos div #active{
     color: #d80e0e;
-    font-size: 40px;
-    margin: 5px;
+    font-size: 4vh;
+    margin: 1vw;
 }
 
 .contenido-iconos div h3 {
     color: #fff;
-    font-size: 20px;
+    font-size: 5vh;
     font-weight: 100;
     margin: 10px 10px;
 }
