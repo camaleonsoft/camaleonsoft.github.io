@@ -192,31 +192,32 @@ header {
     color: #fff;
     font-size: 5vh;
     font-weight: 100;
-    margin: 10px 10px;
+    margin: 2vw 2vw;
 }
 
 .contenido-iconos div p {
     color: rgba(255red, 255, 255, 0.55);
-    font-size: 15px;
+    font-size: 3vh;
 }
 
 .boton-iconos {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 1vh;
 }
 
 
 /* FORMULARIO */
 #contacto {
     background: #6cc091;
-    padding: 50px 0px;
+    padding: 9vh 0;
     color: #fff;
 }
 
 #contacto h4 {
     text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 5vh;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
 }
 
 #contacto form {
@@ -229,21 +230,21 @@ header {
 }
 
 .datos-form div {
-    padding: 10px;
+    padding: 2.5vh;
     flex: 1;
 }
 
 form label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
 }
 
 form input,
 form textarea {
     background: #6cc091;
-    border-radius: 10px;
-    border: 2px solid #8dcca9;
-    padding: 10px 5px;
+    border-radius: 3vh;
+    border: 0.5vh solid #8dcca9;
+    padding: 4vh 0.1vh;
     outline: 0;
     color: #fff;
     width: 100%;
@@ -252,7 +253,7 @@ form textarea {
 form input:focus,
 form textarea:focus {
     border-color: #4bae77;
-    box-shadow: 0 0 0 1px #4bae77;
+    box-shadow: 0 0 0 0.1vh #4bae77;
 }
 
 form input::placeholder,
@@ -263,12 +264,12 @@ form textarea::placeholder {
 .mensaje {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0.3vh;
 }
 
 .boton-formulario .boton-saber-mas {
     display: block;
-    border: 1px solid #fff;
+    border: 0.1vh solid #fff;
     color: #fff;
     text-align: center;
     transform: 0.4s;
@@ -283,15 +284,15 @@ footer{
     background: #4d4d5c;
     color: #cccccc4a;
     text-align: center;
-    padding: 10px 0px;
+    padding: 2vh 0;
 }
 
 
 /* About */
 .banner-about div{
-    padding: 100px 60px;
+    padding: 25vh 20vh;
     background-image: url(./images/about-bg.jpg);
-    height: 150vh;
+    height: 200vh;
     background-size:cover;
     background-position: center;
 }
@@ -303,19 +304,19 @@ footer{
     background: rgba(77,77,92, 0.85);
     position: absolute;
     width: 100%;
-    margin: 100px 60px 60px 0px;
+    margin: 20vh 26vh 10vh 0;
     height: 130vh;
     left: 0;
-    border-radius: 100px;
+    border-radius: 10vh;
 
 }
 
 .banner-about h2 {
     position: relative;
     color: #fff;
-    font-size: 3em;
+    font-size: 7vh;
     text-align: center;
-    margin: 1em;
+    margin: 1.5vh;
     text-decoration: underline #6cc091;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 3.5);
 }
@@ -444,40 +445,36 @@ footer{
     /* About */
     #mobile-about div{
         text-align: center;
-        padding: 2.4em;
+        padding: 2.4vh;
         margin: 0;
-        height: 200vh;
+        height: 420vh;
+        padding-left: 0.5vh;
+    }
+
+    #mobile-about div h2 {
+        font-size: 5vh;
+        margin-top: 10vh;
+        padding : 7.5vh 0 0 3vh;
+        text-align: center;
+    }
+
+    #mobile-about div p {   
+        font-size: 3.5vh;
+        width: 45vh;
+        margin: 4vh 0 0 0;
     }
 
     #mobile-about div a {
-        padding: 0 2em;
-        margin: .5em 0;
-    }
-
-    .banner-about h2{
-        padding: 0.1em;
-        align-items: center;
-    }
-
-    #mobile-about div p {
-        text-align: start;
-        font-size: 1.5em;
-        width: 16em;
-        line-height: 1.5;
+        font-size: 2em;
+        padding: 0 3vh;
+        margin: 1.2em 0 0 0.9em;
     }
 
     .banner-about::before {
-        height: 160vh;
+        height: 310vh;
     }
     
     
 }
 
 
-@media(max-width: 415px){
-    #mobile-about div p {
-        font-size: 1.5em;
-        line-height: 1.3;
-        width: 15em;
-    }
-}
