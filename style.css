@@ -395,20 +395,21 @@ footer{
         right: -100%;
         top: 0;
         text-align: center;
-        padding: 100px 0px;
+        padding: 5vh 0;
         z-index: 100;
         transition: 0.8s;
     }
 
     .menu a {
         display: block;
-        padding: 20px;
+        padding: 5vh;
     }
 
     .esconder-menu{
         position: absolute;
-        top: 40px;
-        right: 40px;
+        top: 2vh;
+        right: 5vh;
+        font-size: 8vh;
     }
 
     #check:checked ~ .menu {
