@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Camaleon</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="gallery-body">
+        <header>
+            <h2 class="logo">Camaleon</h2>
+            <input type="checkbox" id="check">
+            <label for="check" class="mostrar-menu">
+                &#8801
+            </label>
+            <nav class="menu">
+                <a class="index.html" id="active">Inicio</a>
+                <a href="about.html">Sobre Nosotros</a>
+                <a href="software.html">Software</a>
+                <a href="#contacto">Contacto</a>
+                <label for="check" class="esconder-menu">
+                    &#215
+                </label> 
+            </nav>  
+        </header>
+        <h3 class="gallery-heading">Camaleon Video Gallery</h3>
+
+        <div class="gallery-container">
+
+            <div class="main-video">
+                <div class="video">
+                    <video src="./images/ventas_soft.mp4" controls muted autoplay></video>
+                    <h3 class="tittle">01. Software de ventas</h3>
+                </div>
+            </div>
+        
+            <div class="video-list">
+                <div class="vid active">
+                    <video src="images/ventas_soft.mp4" muted></video>
+                    <h3 class="tittle">01. Software de Ventas</h3>
+                </div>
+                <div class="vid">
+                    <video src="./images/stock_soft.mp4" muted></video>
+                    <h3 class="tittle">02. Software de Stock</h3>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title');
+        
+        listVideo.forEach(video =>{
+                video.onclick = () =>{
+                    listVideo.forEach(vid => vid.classList.remove('active'));
+                    video.classList.add('active');
+                    if(video.classList.contains('active')){
+                        let src = video.children[0].getAttribute('src');
+                        mainVideo.src = src;
+                        let text = video.children[1].innerHTML;
+                        title.innerHTML = text;
+
+                    };
+                };
+            });
+        </script>
+        
+
+        </body>
+</html>
