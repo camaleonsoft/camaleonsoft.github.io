@@ -15,7 +15,7 @@
             &#8801
         </label>
         <nav class="menu">
-            <a class="index.html" id="active">Inicio</a>
+            <a href="index.html" id="home-active">Inicio</a>
             <a href="about.html">Sobre Nosotros</a>
             <a href="software.html">Software</a>
             <a href="#contacto">Contacto</a>
@@ -24,10 +24,11 @@
             </label> 
         </nav>  
     </header>
+
     <section id="banner">
         <div class="contenido-banner">
             <h2>Camaleon</h2>
-            <h3>El Software más rapido y completo para tu empresa.</h3>
+            <h3>El Software más rápido y completo para tu empresa.</h3>
             <a href="gallery.html" class="boton-empezar">EMPEZAR</a>
         </div>
     </section>
@@ -49,8 +50,8 @@
 
         <div>
             <img src="./images/soft3.jpg" alt="">
-            <h4>Codigos</h4>
-            <p>Software de creacion de codigos/articulos</p>
+            <h4>Códigos</h4>
+            <p>Software de creación de códigos/artículos</p>
             <a href="gallery.html" class="boton-saber-mas">Saber Mas</a>
         </div>
     </section>
@@ -83,39 +84,110 @@
                 <i id="active" class="fa-solid fa-location-dot"></i>
                 <p>San Francisco Solano</p>
             </div>
-            </section>
+        </div>
     </section>
 
     <section id="contacto">
         <h4>Contactate con nosotros</h4>
-        <form action="#">
+        <form id="formulario" action="https://formsubmit.co/176b8a3c411566eb1dc9e346e0ec0613" method="POST">
+            <!-- Campos del formulario -->
             <div class="datos-form">
                 <div class="nombre">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" 
-                    placeholder="Nombre">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="name" required>
                 </div>
                 <div class="email">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" 
-                    placeholder="Email">
+                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" required>
                 </div>
             </div>
             <div class="mensaje">
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30"
-                rows="10" placeholder="Mensaje"></textarea>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
             </div>
             <div class="boton-formulario">
-                <a href="#" class="boton-saber-mas">Enviar Mensaje</a>
-             </div>
+                <!-- Campo oculto para deshabilitar el captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Botón de envío del formulario -->
+                <input type="submit" value="Enviar">
+            </div>
         </form>
     </section>
+
+    <!-- Contenido del modal -->
+    <div id="popup" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarPopup()">&times;</span>
+            <p>Formulario enviado exitosamente.</p>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var formulario = document.getElementById('formulario');
+
+            var mensajeTextarea = document.getElementById('mensaje');
+
+            // Define el mensaje predeterminado que deseas mostrar
+            var mensajePredeterminado = "Hola, quiero obtener más información sobre sus servicios.";
+
+            // Establece el valor del área de texto con el mensaje predeterminado
+            mensajeTextarea.value = mensajePredeterminado;
+
+
+            formulario.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Datos del formulario
+                var formData = new FormData(formulario);
+
+                // URL para el primer destinatario
+                var url1 = 'https://formsubmit.co/176b8a3c411566eb1dc9e346e0ec0613';
+
+                // URL para el segundo destinatario
+                var url2 = 'https://formsubmit.co/c9240d21dcbf3194a0cd554adaa3a261';
+
+                // Configuración de la solicitud
+                var options = {
+                    method: 'POST',
+                    body: formData
+                };
+
+                // Mostrar el popup inmediatamente
+                mostrarPopup();
+
+                // Restablecer el formulario inmediatamente
+                formulario.reset();
+
+                // Realizar ambas solicitudes al mismo tiempo
+                Promise.all([
+                    fetch(url1, options),
+                    fetch(url2, options)
+                ]).then(responses => {
+                    // No necesitas esperar a que las solicitudes se completen para mostrar el popup.
+                    // Puedes realizar otras acciones aquí si es necesario.
+                }).catch(error => {
+                    console.error('Error al enviar el formulario:', error);
+                });
+            });
+        });
+
+        // Función para mostrar el popup
+        function mostrarPopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'block';
+        }
+
+        function cerrarPopup() {
+            console.log('Cerrando popup'); // Añade esta línea para verificar si la función se ejecuta
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+    </script>
 
     <footer>
         <p>&copy;2024 Camaleon</p>
     </footer>
-
-    </nav>
 </body>
 </html>
