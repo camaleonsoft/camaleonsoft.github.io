@@ -177,7 +177,7 @@ header {
 }
 
 .contenido-iconos div i {
-    color: #6cc091;
+    color: #291f94;
     font-size: 10vh;
     margin: 0;
 }
@@ -191,7 +191,8 @@ header {
 .contenido-iconos div h3 {
     color: #fff;
     font-size: 5vh;
-    font-weight: 100;
+    height: 10vh;
+    font-weight: 600;
     margin: 2vw 2vw;
 }
 
